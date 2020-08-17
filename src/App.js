@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import { IconButton } from '@material-ui/core';
+import AppsIcon from '@material-ui/icons/Apps';
+import style from './App.module.scss';
 
 function App() {
+  const handleAppMenuBtnClick = (event) => {
+    //do nothig for now
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/Ap p.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={style.App}>
+      <header className={style.header}>
+        <nav>
+          <IconButton
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            onClick={handleAppMenuBtnClick}
+          >
+            <AppsIcon />
+          </IconButton>
+        </nav>
       </header>
+      <main></main>
     </div>
   );
 }

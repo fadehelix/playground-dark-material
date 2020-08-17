@@ -5,10 +5,14 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import Theme from './theme';
+
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline>
-      <App />
+      <Theme>
+        <App />
+      </Theme>
     </CssBaseline>
   </React.StrictMode>,
   document.getElementById('root')
