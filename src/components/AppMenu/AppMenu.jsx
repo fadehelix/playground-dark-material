@@ -32,7 +32,7 @@ const StyledMenu = withStyles({
 
 function AppMenu({ anchorElement }) {
   const [anchorEl, setAnchorEl] = useState(true);
-  const [expandedGroup, setExpandedGroup] = useState('panel1');
+  const [expandedGroup, setExpandedGroup] = useState('group-0');
   const [groups, setGroups] = useState(null);
 
   useEffect(() => {

@@ -6,6 +6,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 
+import { AppMenuButton } from 'components';
+
 Group.propTypes = {
   sectionId: PropTypes.string,
   expanded: PropTypes.string,
@@ -24,7 +26,10 @@ function Group({ expandHandler, sectionId, expandedSectionId, title, pages }) {
         <Typography>{title}</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        {!!pages && pages.map((page) => <button>{page.displayText}</button>)}
+        {!!pages &&
+          pages.map((page) => (
+            <AppMenuButton value={page.displayText}></AppMenuButton>
+          ))}
       </AccordionDetails>
     </Accordion>
   );
