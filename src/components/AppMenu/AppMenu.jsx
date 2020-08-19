@@ -13,6 +13,11 @@ const StyledMenu = withStyles({
     borderRadius: '3px',
     border: '1px solid #707070',
     display: 'flex',
+    padding: 0,
+  },
+  list: {
+    padding: 0,
+    paddingRight: 0,
   },
 })((props) => (
   <Menu

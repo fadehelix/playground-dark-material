@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '15px',
     opacity: '.5',
     fontWeight: 'bold',
+    width: '100px',
   },
   customRoot: {
     '&:hover': {
